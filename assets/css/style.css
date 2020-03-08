@@ -6,6 +6,9 @@
     width: 100%;
 }
 
+form {
+    max-width: 960px;
+}
 
 li {
     display: inline;
@@ -14,10 +17,6 @@ li {
     text-align: center;
     padding: 20px;
 
-}
-
-li:last-child {
-    border-right: none;
 }
 
 .header {
@@ -154,3 +153,38 @@ input.submit {
     padding: 5px 25px;
 }
 
+  @media screen and (max-width: 980px){
+    .container {
+    display: block;
+  }
+  }
+  
+  @media screen and (max-width: 768px){
+    .container {
+      display: block;
+    }
+    }
+  
+  @media screen and (max-width: 640px){
+  
+    .container2 {
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      margin: 20px;
+    }
+
+    }
+    .header{
+      display: block;
+      width: 100%;
+    }
+    .topnav{
+      display: block;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    }
