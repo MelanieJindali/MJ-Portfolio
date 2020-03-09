@@ -61,22 +61,32 @@ p {
     margin-bottom: 100px;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+}
+
 .portfolio {
     position: relative;
-    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
-
+.portfolio:last-child{
+    margin-right: 0px;
+}
 
 .portfolio-title {
     position: absolute;
-    top: 60%;
+    top: 75%;
     z-index: 1;
     background-color: #4aaaa5;
     color: white;
     padding: 5px 5px;
     text-align: center;
-    width: 100%;
+    width: auto;
+    right: 0px;
+    left: 0px;
   }
 
 img.portfolio-pic {
@@ -158,13 +168,19 @@ input.submit {
 
   @media screen and (max-width: 980px){
     .container {
-    display: block;
+    max-width: 800px;
+  }
+  input {
+      max-width: 800px;
   }
   }
   
   @media screen and (max-width: 768px){
     .container {
-      display: block;
+      max-width: 650px;
+    }
+    input {
+        max-width: 650px;
     }
     }
   
@@ -179,10 +195,18 @@ input.submit {
     .topnav{
       display: block;
       text-align: center;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
     }
-    .wrapper {
-      width: 100%;
-      margin: auto;
+    .container {
+      width: 450px;
+    }
+    input {
+        max-width: 450px;
+    }
+    .row {
+        display: block;
+    }
+    .portfolio {
+        margin-right: 0px;
     }
     }
