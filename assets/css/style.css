@@ -4,6 +4,8 @@
     justify-content: space-around;
     background-color: white;
     width: 100%;
+    position: static;
+    margin-top: 0%;
 }
 
 form {
@@ -61,6 +63,7 @@ p {
 
 .portfolio {
     position: relative;
+    display: block;
   }
 
 
@@ -137,7 +140,7 @@ img.Pic {
 input {
     margin-top: 5px;
     margin-bottom: 15px;
-    width: 100%;
+    width: 960px;
     
 }
 
@@ -166,25 +169,20 @@ input.submit {
     }
   
   @media screen and (max-width: 640px){
-  
-    .container2 {
-      display: flex;
-      text-align: center;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-      height: auto;
-      margin: 20px;
-    }
-
-    }
+    
     .header{
       display: block;
       width: 100%;
+      margin-top: 0%;
+      position: static;
     }
     .topnav{
       display: block;
       text-align: center;
       padding-bottom: 10px;
+    }
+    .wrapper {
+      width: 100%;
+      margin: auto;
     }
     }
