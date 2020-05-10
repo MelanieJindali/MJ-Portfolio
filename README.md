@@ -4,4 +4,4 @@ This is a site that will showcase a little bit about who I am, what I do, the wo
 
 https://melaniejindali.github.io/Responsive-Portfolio/
 
-![Site Demo] (/assets/images/Animated GIF-source.gif)
+![Site Demo](/assets/images/Animated GIF-source.gif)
