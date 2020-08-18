@@ -14,35 +14,15 @@ body {
 
 }
 
-.font-staat {
-    font: normal 400 18px var(--font-staat);
-}
-.font-os {
-    font: normal 300 18px var(--font-os);
-}
-.font-ram {
-    font: normal bold 18px var(--font-ram);
-}
-
-.font-size-40 {
-    font-size: 40px;
-}
-.font-size-34 {
-    font-size: 34px;
-}
-.font-size-27 {
-    font-size: 27px;
-}
-.font-size-20 {
-    font-size: 20px;
-}
-.font-size-16 {
-    font-size: 16px;
-}
-
-.bgcolor-black {
-    background-color: var(--color-black);
-}
+.font-staat { font: normal 400 18px var(--font-staat); }
+.font-os { font: normal 300 18px var(--font-os); }
+.font-ram { font: normal bold 18px var(--font-ram); }
+.font-size-40 { font-size: 40px; }
+.font-size-34 { font-size: 34px; }
+.font-size-27 { font-size: 27px; }
+.font-size-20 { font-size: 20px; }
+.font-size-16 { font-size: 16px; }
+.bgcolor-black { background-color: var(--color-black); }
 
 #header nav{
     height: 100vh;
@@ -85,21 +65,10 @@ body {
 .toggle-left {
     left: 0 !important;
     width: 1000px !important;
-
-}
-
-/* site-main */
-
-.site-banner .banner-area {
-    background: url("./assets/images/landscape.jpg") no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
 }
 
 .site-banner .banner-area .author {
-    margin: 0;;
+    margin: 0;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -120,9 +89,30 @@ body {
 #footer form .row .col input[type="email"],
 #footer form textarea {
     border: none;
-    border-radius: 0;
-    border-bottom: 1px solid gray;
+    border-radius: 5px;
+    border: 1px solid gray;
     padding: 1.5rem 1rem;
+}
+
+div .row .pb-4 {
+  border-radius: 5px;
+  background-color: white;
+  margin: 5px;
+  padding: 25px;
+  filter: drop-shadow(2px 2px 5px rgb(124, 124, 124));
+}
+
+.app-header {
+  font-size: large;
+  text-align: center;
+}
+
+.app-text {
+  text-align: center;
+}
+
+.cli {
+  margin-top: 35px;
 }
 
 @media screen and (min-width: 768px) {

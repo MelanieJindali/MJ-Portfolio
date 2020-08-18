@@ -34,14 +34,6 @@ var typed = new Typed('#typed', {
     loop: true
 })
 
-var typed_2 = new Typed('#typed_2', {
-    strings: [
-        'a Web Developer.'
-    ],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true
-});
 
 document.querySelectorAll('a[href^="#"').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
