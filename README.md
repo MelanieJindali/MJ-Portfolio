@@ -1,5 +1,13 @@
-# Responsive-Portfolio
+# Portfolio
 
-This is a site that will showcase a little bit about who I am, what I do, the work I've done, and how to contact me.
+## Overview
+This site will be a showcase of me and work that I have done!
 
-https://melaniejindali.github.io/Responsive-Portfolio/
+### Languages used:
+
+* HTML
+* CSS
+* JavaScript
+* jQuery
+
+Check out my [Portfolio](https://melaniejindali.github.io/MJ-Portfolio/)
