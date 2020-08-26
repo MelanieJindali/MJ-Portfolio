@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rambla&family=Staatliches&display=swap'); 
 
-body {
-    margin: 0;
-    padding: 0;
+main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 :root {
@@ -33,7 +33,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
     transition: left .5s ease;
 }
 
@@ -52,27 +52,19 @@ body {
     color: var(--color-white) !important;
 }
 
-#header .toggle-button {
-    background: none;
+.toggle-button {
+    background: white;
     color: var(--color-black);
     position: fixed;
     top: 25px;
     right: 20px;
     border: none;
-    z-index: -1;
+    z-index: 2;
 }
 
 .toggle-left {
     left: 0 !important;
     width: 1000px !important;
-}
-
-.site-banner .banner-area .author {
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #footer form .row .col input[type="text"],
