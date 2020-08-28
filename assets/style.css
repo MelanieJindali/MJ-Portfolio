@@ -5,6 +5,7 @@ main {
   grid-template-rows: auto 1fr auto;
 }
 
+
 :root {
     --color-black: #000000;
     --color-white: #ffffff;
@@ -26,6 +27,7 @@ main {
 
 #header nav{
     height: 100vh;
+    z-index: 1;
 }
 
 #header {
@@ -33,7 +35,6 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
     transition: left .5s ease;
 }
 
@@ -59,7 +60,7 @@ main {
     top: 25px;
     right: 20px;
     border: none;
-    z-index: 2;
+    z-index: 1;
 }
 
 .toggle-left {
