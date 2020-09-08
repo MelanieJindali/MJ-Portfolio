@@ -1,77 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
 
+html,
 body {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.site-main {
-  font-family: 'Lato', 'Montserrat', sans-serif;
+  margin: 0;
   display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));}
-
-.side-nav {
-  background-color: lavender;
+  font-family: "Lato", sans-serif;
 }
 
-#header nav {
-	position: relative;
-	height: 100vh;
-	z-index: 0;
+.navbar-toggler-icon {
+  color: blue;
 }
 
-#header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	transition: left 0.5s ease;
+li {
+  margin-top: 1em;
+  text-align: center;
+  list-style: none;
+  height: 100px;
 }
 
-#header .site-title .navbar-brand {
-	letter-spacing: 2px;
-	color: white;
+.site-main {
+  display: grid;
+  align-items: center;
+  margin: auto;
+	width: 75%;
+  padding: 2em 4em;
 }
 
-#header .nav-link {
-	margin: 0.7rem 1rem;
-	border-bottom: 1px solid dimgray;
-	text-transform: uppercase;
+.me {
+  display: grid;
+  justify-items: center;
 }
 
-#header .nav-link:hover {
-	color: white !important;
+.my-pic {
+  width: 30%;
+  display: grid;
+  justify-items: center;
+  clip-path: circle(40% at 50% 45%);
 }
 
-.toggle-button {
-	background: white;
-	color: var(--color-black);
-	position: fixed;
-	top: 25px;
-	right: 20px;
-	border: none;
-	z-index: 1;
-}
-
-.toggle-left {
-	left: 0 !important;
-	width: 1000px !important;
-}
-
-#footer form .row .col input[type="text"],
-#footer form .row .col input[type="email"],
-#footer form textarea {
-	border-bottom: 1px solid gray;
-	padding: 1.5rem 1rem;
-}
-
-div .row .pb-4 {
-	border-radius: 5px;
-	background-color: white;
-	margin: 5px;
-	padding: 25px;
-	filter: drop-shadow(2px 2px 5px rgb(124, 124, 124));
-}
 
 .app-header {
 	font-size: large;
@@ -92,10 +58,3 @@ div .row .pb-4 {
 	justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
-	.toggle-button {
-		display: none;
-	}
-}
-
-/* #site-main */
