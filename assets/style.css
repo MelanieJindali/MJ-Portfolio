@@ -2,42 +2,55 @@
 
 html,
 body {
-  margin: 0;
-  display: grid;
-  font-family: "Lato", sans-serif;
+	margin: 0;
+	display: grid;
+	font-family: "Lato", sans-serif;
 }
 
 .navbar-toggler-icon {
-  color: blue;
+	color: blue;
 }
 
 li {
-  margin-top: 1em;
-  text-align: center;
-  list-style: none;
-  height: 100px;
+	margin-top: 1em;
+	text-align: center;
+	list-style: none;
+	height: 100px;
 }
 
 .site-main {
-  display: grid;
-  align-items: center;
-  margin: auto;
-	width: 75%;
-  padding: 2em 4em;
+	display: grid;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+	padding: 2em 8em;
 }
 
-.me {
-  display: grid;
-  justify-items: center;
+.site-banner {
+  width: 100%;
+	right: 0;
+  left: 0;
+  filter: brightness(40%);
+}
+
+.about-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 1em;
 }
 
 .my-pic {
-  width: 30%;
-  display: grid;
-  justify-items: center;
-  clip-path: circle(40% at 50% 45%);
+	max-width: 65%;
+	display: block;
+	clip-path: circle(40% at 50% 45%);
 }
-
 
 .app-header {
 	font-size: large;
@@ -57,4 +70,3 @@ li {
 	flex-direction: column;
 	justify-content: space-between;
 }
-

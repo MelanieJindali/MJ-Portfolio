@@ -10,10 +10,10 @@
 
 <body>
 <!-- header area -->
-<header >
+<header id="home">
     <div class="">
         <div class="">
-            <nav id="home" class="navbar navbar-expand-xlg navbar-dark bg-dark"> 
+            <nav class="navbar navbar-expand-xlg navbar-dark bg-dark"> 
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,7 +26,10 @@
             </nav>
         </div>
     </div>
-   
+    <!-- <div class="site-banner"> -->
+    <img class="site-banner" src="./assets/images/Abstract.jpg" alt="An Abstract Image">
+    <h1>Scratching that creative itch, one <span>project</span> at a <span>time</span></h1>
+   <!-- </div> -->
 </header>
 <!-- #header area -->
 
@@ -36,32 +39,32 @@
 
             <!-- about me area -->
                 <section class="about" id="about_me">
-                    <div class="me">
-                        <h1 class="about-header">About Me</h1>
-                          <img class="my-pic" src="assets/images/MelanieJindali.jpg" alt="profile image" >
-                        <div class="">
-                            <p> 
-                              Hey there, I'm Melanie Jindali, <span id="typed"></span>
-                              <br><br>
-                              I am passionate about creating clean modern web applications and determined to keep learning about new technologies. When I'm not coding, I am either taking care of my plants, gaming on my Switch, reading blogs while swinging in the hammock, or spending time with my dearest friends and family.
-                              <br><br>
-                              Here's a stash of tools I use:
-                              <br>
-                              Languages:  HTML/CSS,  JavaScript,  JSON
-                              Databases:  MongoDB,  MySQL,  Firebase
-                              Frameworks:  React.js,  Express,  BootStrap,  jQuery
-                              Other:  Node.js,  Github,  Bash,  Heroku,  APIs,  AJAX
-                              Graphic Designing: Adobe InDesign, Illustrator and Photoshop
-                            </p>                    
+                        <div class="wrapper">
+                          <h1 class="about-header">About</h1>
+                          <div class="about-container">
+                            <div>
+                              <img class="my-pic" src="assets/images/MelanieJindali.jpg" alt="Image of Melanie Jindali" >
+                            </div>
+                            <div>
+                                <p>Hey there, I'm Melanie Jindali, <span id="typed"></span></p>
+                                <p>I am passionate about creating clean modern web applications and determined to keep learning about new technologies. When I'm not coding, I am either taking care of my plants, gaming on my Switch, reading blogs while swinging in the hammock, or spending time with my dearest friends and family.</p>
+                                <p>Here's a stash of tools I use:
+                                Languages:  HTML/CSS,  JavaScript,  JSON
+                                Databases:  MongoDB,  MySQL,  Firebase
+                                Frameworks:  React.js,  Express,  BootStrap,  jQuery
+                                Other:  Node.js,  Github,  Bash,  Heroku,  APIs,  AJAX
+                                Graphic Designing: Adobe InDesign, Illustrator and Photoshop
+                                </p>
+                              </div>
+                          </div>                    
                         </div>
-                    </div>
                 </section>
             <!-- #about me area -->
 
             <!-- portfolio -->
                 <!-- Web Apps -->
                 <section class="work" id="portfolio">
-                    <div class="">
+                    <div class="wrapper">
                         <h5 class="">Portfolio</h5>
                         <h1 class="">Web Apps</h1>
                     </div>
@@ -74,6 +77,7 @@
                             |
                             <a href="https://github.com/MelanieJindali/Celebrity-Quest/">Github</a>
                           </span>
+                          <p>Search for </p>
                         </div>
                         <div class="app-text">
                           <h4 class="app-header">GifTastic App</h4>
@@ -124,7 +128,7 @@
             <!-- #portfolio -->
 
             <footer id="footer" class="">
-                <div id="contact">
+                <div id="contact" class="wrapper">
                     <div>
                         <h5 class="">Personal Info</h5>
                         <h1 class="">Contact Me</h1>
