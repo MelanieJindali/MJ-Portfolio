@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Carter+One&family=Shrikhand&display=swap");
 
 html,
 body {
@@ -27,10 +27,31 @@ li {
 }
 
 .site-banner {
-  width: 100%;
-	right: 0;
-  left: 0;
-  filter: brightness(40%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/Starry\ Night\ Sky.jpg');  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10em;
+  position: relative;
+}
+
+.header-text {
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  color: #fff0e6;
+}
+
+.header-text span{
+  font-family: 'Carter One', cursive;
+}
+
+.header-text p:last-child{
+  position: relative;
+  text-align: right;
+  bottom: -4.5em;
+  right: -2.5em;
 }
 
 .about-container {
