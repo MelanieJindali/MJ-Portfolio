@@ -3,100 +3,66 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Custom root properties */
 :root {
-  --ff-main: 'Lato', sans-serif;
-  --ff-header: 'Source Serif Pro', Serif;
+	--ff-main: "Lato", sans-serif;
+	--ff-header: "Source Serif Pro", Serif;
 
-  --fw-bold: 600;
-  --fw-black: 900;
+	--fw-bold: 600;
+	--fw-black: 900;
 
-  --txt-light: white;
-  --txt-dark: #303030;
-  --txt-accent: #ffa282;
+	--color-light: white;
+	--color-dark: #303030;
+	--color-accent: #ffa282;
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 1rem;
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
 }
 
-html,
+@media (min-width: 800px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+/* General styles */
 body {
-	margin: 0;
-	display: grid;
-  font-family: "Lato", sans-serif;
+  background: var(--color-light);
+  color: var(--color-dark);
+  margin: 0;
+  font-family: var(--ff-main);
+  font-size: var(--fs-body);
+  line-height: 1.6;
 }
 
-.hamburger {
-	color: blue;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-li {
-	margin-top: 1em;
-	text-align: center;
-	list-style: none;
-	height: 100px;
+/* Typography */
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
 }
 
-.site-main {
-	display: grid;
-	align-items: center;
-	margin: 0 auto;
-	width: 100%;
-	padding: 2em 8em;
-}
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
 
-.site-banner {
-  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-  padding: 10em;
-  margin: auto;
-}
-
-.header-text h1 {
-  font-family: 'Montserrat', sans-serif;
-  color: #2b1630;
-  text-align: center;
-}
-
-
-.about-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
-.wrapper {
-	margin: 0 auto;
-	padding: 1em;
-}
-
+/* Main pic */
 .my-pic {
 	max-width: 65%;
 	display: block;
 	clip-path: circle(40% at 50% 45%);
-}
-
-.app-header {
-	font-size: large;
-	text-align: center;
-}
-
-.app-text {
-	text-align: center;
-}
-
-.cli {
-	margin-top: 35px;
-}
-
-.pb-4 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
