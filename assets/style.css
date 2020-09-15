@@ -172,3 +172,20 @@ h3 {
   background: currentColor;
   opacity: .5;
 }
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 970px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .service + .service {
+    margin-left: 2.3em;
+  }
+}
