@@ -60,7 +60,6 @@ img {
 }
 
 /* Buttons */
-
 .btn {
   display: inline-block;
   padding: .5em 2.5em;
@@ -123,6 +122,12 @@ h3 {
   font-family: var(--ff-header);
   margin-bottom: 1em;
   padding: .25em 1em;
+}
+
+.subtitle-work {
+  color: var(--color-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
 }
 
 /* Header */
@@ -219,3 +224,25 @@ h3 {
     margin-left: 2.3em;
   }
 }
+
+/* About me section */
+.about-me {
+  background-color: var(--color-light);
+  background-image: url('../assets/images/gradient.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subtitle-about {
+  position: relative;
+  width: calc(100% + 4em);
+  left: -2em;
+  padding-left: 2em;
+  padding-right: calc(200px + 4em);
+}
+
