@@ -43,6 +43,7 @@ body {
   font-family: var(--ff-main);
   font-size: var(--fs-body);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 section {
@@ -245,4 +246,26 @@ h3 {
   padding-left: 2em;
   padding-right: calc(200px + 4em);
 }
+
+/* My work section */
+.work {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+}
+
+.portfolio {
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  margin-bottom: 4em;
+}
+
+.portfolio-img {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 800px;
+}
+
 
