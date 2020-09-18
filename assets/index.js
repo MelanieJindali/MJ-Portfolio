@@ -1,13 +1,14 @@
 const navToggle = $('.nav-toggle');
-const navLinks = $('.nav-link');
+const navLinks = $('.nav-items a');
 
-navToggle.click(() => $('body').toggleClass('nav-open'))
+navToggle.click(() => {
+  $('body').toggleClass('nav-open');
+});
 
-navLinks.forEach(link => {
-  link.click(() => {
-    $('body').removeClass('nav-open')
-  })
+navLinks.click((link) => {
+  link.forEach($('body').removeClass('nav-open'))
 })
+
 
 var typed = new Typed('#typed', {
     strings: [
