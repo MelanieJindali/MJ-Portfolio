@@ -15,7 +15,7 @@
 
 	--color-light: white;
 	--color-dark: #303030;
-	--color-accent: #f38c8f;
+	--color-accent: #D9AFD9;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -36,6 +36,11 @@
 }
 
 /* General styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-light);
   color: var(--color-dark);
@@ -204,7 +209,6 @@ header {
   font-weight: var(--fw-bold);
   font-size: var(--fs-h3);
   text-decoration: none;
-  transition: 200ms ease-in-out;
 }
 
 .nav-link:hover {
@@ -269,6 +273,7 @@ header {
   }    
   
   .subtitle-intro {
+    font-family: var(--ff-header);
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
