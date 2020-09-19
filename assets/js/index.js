@@ -9,13 +9,3 @@ navToggle.click(() => {
 navLinks.click((link) => {
   link.forEach($('body').removeClass('nav-open'))
 });
-
-var typed = new Typed('#typed', {
-    strings: [
-      'front-end developer'
-    ],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true
-});
-
