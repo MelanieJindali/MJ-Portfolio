@@ -250,7 +250,6 @@ header {
   box-shadow: var(--shadow);
 }
 
-
 @media (min-width: 970px) {
   .intro {
       display: grid;
@@ -361,17 +360,30 @@ header {
 }
 
 .portfolio {
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio-item {
-  margin-bottom: 4em;
+  background: var(--color-accent);
+  overflow: hidden;
+}
+
+.portfolio-item:focus {
+  position: relative;
+  z-index: 2;
 }
 
 .portfolio-img {
-  margin: 0 auto;
-  margin-bottom: 1em;
-  width: 800px;
+  transition: 
+    transform 750ms ease-in-out,
+    opacity 250ms linear;
+}
+
+.portfolio-img:hover,
+.portfolio-item:focus .portfolio-img {
+  transform: scale(1.2);
+  opacity: .5;
 }
 
 /* Footer */
