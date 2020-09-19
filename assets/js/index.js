@@ -1,3 +1,4 @@
+// Hamburger button
 const navToggle = $('.nav-toggle');
 const navLinks = $('.nav-items a');
 
@@ -7,24 +8,14 @@ navToggle.click(() => {
 
 navLinks.click((link) => {
   link.forEach($('body').removeClass('nav-open'))
-})
-
+});
 
 var typed = new Typed('#typed', {
     strings: [
-      'a Web Developer.',
-      'a Graphic Designer.'
+      'front-end developer'
     ],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true
 });
 
-document.querySelectorAll('a[href^="#"').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
