@@ -339,7 +339,7 @@ header {
 /* About me section */
 .about-me {
 	background-color: var(--color-light);
-	background-image: url("../assets/images/gradient.jpg");
+	background-image: url("../images/gradient.jpg");
 	background-size: cover;
 	width: 100%;
 }
